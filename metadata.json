@@ -1,0 +1,8 @@
+{
+  "name": "DRAWOLT — Global Industrial Power Tools Platform",
+  "description": "International industrial power tools platform featuring the DRAWOLT Standard and TOP LINE collections, multilingual experience, 3D engineering showcase, authorized dealer hub, and service center ecosystem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-sans), var(--font-rtl), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-rtl), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --drawolt-lime: #9DCB16;
+  --drawolt-navy: #101C35;
+  --drawolt-dolphin: #7D8792;
+  --drawolt-charcoal: #202226;
+  --drawolt-white: #FFFFFF;
+  --drawolt-titanium: #777E87;
+  --drawolt-carbon: #15171A;
+  --drawolt-surface-1: #F6F8FA;
+  --drawolt-surface-2: #EEF1F3;
+  --drawolt-border: #E5E9ED;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-rtl), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--drawolt-white);
+  color: var(--drawolt-navy);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Precision industrial hairline grid background */
+.industrial-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(16, 28, 53, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(16, 28, 53, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.titanium-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(119, 126, 135, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(119, 126, 135, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
